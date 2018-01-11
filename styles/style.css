@@ -9,24 +9,19 @@ body{
 }
 .navbar{
 	
-	height: 80px;
+	height: 100px;
 	border-radius: 0px;
 	margin-bottom: 0px
 }
-.navbar-brand.left>img{
-	width: 70%;
-	padding-top: 10px
-}
 
-.navbar-brand.right>img{
-	width: 80%;
-	padding-left: 40px;
+.imgright{
+	padding-top: 20px
 }
 .navbar-nav{
-	padding-top: 15px;
+	padding-top: 20px;
 }
 .navbar-nav>li>a{
-	font-size: 1.2em;
+	font-size: 1.3em;
 	color: white
 }
 .navbar-nav>li>a:hover{
@@ -61,17 +56,15 @@ h3{
 .col-md-7{
 	padding-left: 0px;
 	padding-right: 0px;
-	height: 500px
 }
 .col-md-5{
 	padding-left: 0px;
 }
 .col-md-5>.container{
 	padding-left: 0px;
-	height: 500px
 }
 #myCarousel{
-	width: 37%
+	width: 38%
 }
 .carousel-indicators{
 	display: none;
@@ -121,6 +114,10 @@ h3{
 .feel{
 	margin-top: 30px;
 	text-align: center;
+	padding-bottom: 30px
+}
+#text-carousel{
+	padding-bottom: 30px
 }
 .feel>h3{
 	font-size: 30px;
@@ -213,4 +210,44 @@ h3{
 	color: #ffffff;
 	text-align: center;
 	font-size: 1.2em
+}
+.btn-default{
+	background-color: #691b1d !important;
+}
+
+.cd-top {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-indent: 100%;
+
+  background: rgba(252, 163, 10, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.cd-top:hover {
+  background-color: #691b1d;
+  opacity: 1;
 }

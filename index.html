@@ -13,21 +13,28 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar">
-          <div class="container">
-            <div class="navbar-header">
-              <a class="navbar-brand left" href="#"><img src="images/logo.png" alt=""></a>
+        <div class="row">
+            <div class="container">
+                <div class="col-md-4">
+                    ><img class="imgleft" src="images/logo.png" alt="">
+                </div>
+                <div class="col-md-4">
+                    <nav class="navbar">
+                      <div class="container">                       
+                        <ul class="nav navbar-nav">              
+                          <li><a href="#">GIỚI THIỆU</a></li>
+                          <li><a href="info.html">KIẾN THỨC</a></li>
+                          <li><a href="#">HỎI ĐÁP</a></li>
+                        </ul>                        
+                      </div>
+                    </nav>  
+                </div>
+                <div class="col-md-4">
+                    <img class="imgright" src="images/hotline.png" alt="">
+                </div>
             </div>
-            <ul class="nav navbar-nav">              
-              <li><a href="#">GIỚI THIỆU</a></li>
-              <li><a href="#">KIẾN THỨC</a></li>
-              <li><a href="#">HỎI ĐÁP</a></li>
-            </ul>
-            <div class="navbar-header">
-              <a class="navbar-brand right" href="#"><img src="images/hotline.png" alt=""></a>
-            </div>
-          </div>
-        </nav>	
+        </div>
+		
 	</header>
 	<section>
         <div class="banner">
@@ -63,7 +70,7 @@
                     </div>
                     <div class="col-md-5"> 
                     <div class="container">                                          
-                      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <div id="myCarousel" class="carousel slide">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
                           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -138,8 +145,7 @@
 
         <aside class="container-fluid feel">
             <h3>CẢM NHẬN NGƯỜI SỬ DỤNG</h3>
-           <div id="text-carousel" class="carousel slide" data-ride="carousel">
-                <!-- Wrapper for slides -->
+           <div id="text-carousel" class="carousel slide" >
                 <div class="row">
                     <div class="col-xs-offset-3 col-xs-6">
                         <div class="carousel-inner">
@@ -149,14 +155,7 @@
                                         <p>Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="carousel-content">
-                                    <div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, sint fuga temporibus nam saepe delectus expedita vitae magnam necessitatibus dolores tempore consequatur dicta cumque repellendus eligendi ducimus placeat! </p>
-                                    </div>
-                                </div>
-                            </div>
+                            </div>                            
                             <div class="item">
                                 <div class="carousel-content">
                                     <div>                          
@@ -168,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Controls --> <a class="left carousel-control" href="#text-carousel" data-slide="prev">
+                <a class="left carousel-control" href="#text-carousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
               </a>
              <a class="right carousel-control" href="#text-carousel" data-slide="next">
