@@ -12,29 +12,49 @@ header{
 }
 header>.logo{
 	padding-top: 20px;
-	padding-bottom: 20px
+	padding-bottom: 20px;
 }
-header>#menu{
-	margin-top: 20px;
+
+header{	
+	text-align: center;
+	padding-bottom: 30px;
 }
-.navbar{
+header>.menu{	
 	background-color: #872123;
-	padding-left: 10%;
 }
-.navbar-nav>li>a{
-	font-size: 1.3em;
-	color: white
+header>.menu>.container{
+	width: 65%;
+	margin: auto;
+	height: 53px;
 }
-.navbar-nav>li>a:hover{
-	color: yellow;
-	background-color: #691b1d
+header>.menu>div>ul{
+	overflow: hidden;
+	line-height: 53px;
 }
-.navbar-nav>li{
-	border-left: 1px solid;
+header>.menu>div>ul>li{
+	float:left;
+	list-style-type:none;
+
 }
-.navbar-nav>li:last-child{
-	border-right: 1px solid;
+header>.menu>div>ul>li>a{
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 1.2em;
+	color: #fff;
+	border-right: 1px solid #757575;
 }
+header>.menu>div>ul>li:hover{
+	background-color: #691b1d;
+}
+header>.menu>div>ul>li>a:hover{
+	color: #FFD700;
+	text-decoration: none;
+}
+header>.menu>div>ul>li:last-child>a{	
+	border-right: none;
+}
+
 main{
 	padding-top: 50px;
 }
@@ -43,11 +63,18 @@ main{
 	padding-top: 20px;
 }
 .col-md-3{
-	margin-left: 20px
+	margin-left: 20px;
+	width: 350px
 }
 .search,.news{
 	background-color: #ffffff;
 	margin:0px;
+}
+.btn-default{
+	background-image: linear-gradient(to bottom,#691b1d 0,#691b1d 100%);
+	text-shadow: none;
+	color: #fff;
+	border-radius: 0px;
 }
 p{
 	font-size: 1.3em
@@ -66,15 +93,39 @@ hr{
 	width: 30%;
 	margin-top: 0px
 }
+.main{
+	padding-bottom: 30px
+}
 .cont{
 	padding-bottom: 100px;
 	border-bottom: 2 px solid
+}
+.cont>.meta{
+	padding-top: 20px;
+	padding-bottom: 20px
+}
+.cont>.meta>span{
+	color: #a3a3a3
+}
+.cont>.meta>span>a{
+	color: #a3a3a3
+}
+.cont>.meta>span>a:hover{
+	text-decoration: none;
+	color: #872123;
+}
+.cont>.meta>.day{
+	padding-right: 50px
 }
 h1{
 	font-size: 2em;
 }
 .news{
 	margin-top: 20px
+}
+.news>.content>p{
+	font-size: 16px;
+	color: #872123;
 }
 .news>.content>p>a{
 	font-size: 16px;
@@ -91,6 +142,10 @@ footer{
 	background-color: #872123;
 	text-align: center;
 }
+footer>.container{
+	width: 65%;
+	margin: auto;
+}
 footer>div>ul{
 	overflow: hidden;
 }
@@ -103,10 +158,66 @@ footer>div>ul>li>a{
 	display: block;
 	padding-left: 20px;
 	padding-right: 20px;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	color: yellow;
-	border-right: 1px solid
+	border-right: 1px solid #757575;
 }
-footer>div>ul>a:last-child{	
-	border-right: 5px solid
+footer>div>ul>li>a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+footer>div>ul>li:last-child>a{	
+	border-right: none;
+}
+footer>hr{
+	border: 1px solid #757575;
+	width: 90%;
+	margin: auto;
+}
+footer>h5{
+	color: #fff;
+	font-size: 1.2em
+}
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-indent: 100%;
+
+  background: rgba(135, 33, 35, 0.8) url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.cd-top:hover {
+  background-color: #691b1d;
+  opacity: 1;
+}
+
+@media only screen and (max-width:620px){
+	header,section,footer{
+		width: 100%;
+	}
 }
