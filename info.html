@@ -12,6 +12,22 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="styles/style_info.css">
 	<script>
+		$(function() {		   
+				// main menu toggler
+				$('.nav').prepend('<div class="menu-icon"><span>Menu</span></div>');
+				$('.menu-icon').click(function(){						
+					$('ul.dropdown').slideToggle(700);
+					$(this).toggleClass("active");	
+				});			
+				// sub menu accordion-like toggler 
+				var $menuToggler = $('.sub > a');
+				$menuToggler.click(function(e) {
+					e.preventDefault();
+					var $this = $(this);
+					$this.toggleClass('current').next('ul').toggleClass('current');
+				});			
+			});
+
 		$(document).ready(function($){			
 			var offset = 300,
 				//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
@@ -45,19 +61,29 @@
 		<div class="logo">
 			<img src="images/cropped-cropped-cropped-logo.png" alt="">
 		</div>
-		<div class="menu">
-			<div class="container">
-				<ul>              
-				  <li><a href="index.html">Viên Nang Giảm Cân FIT</a></li>
-				  <li><a href="info.html">Kiến Thức Giảm Cân</a></li>
-				  <li><a href="#">Hỏi Đáp FIT</a></li>
-				  <li><a href="#">Hotline: 0944 223 224</a></li>
-				</ul>
+		<div class="container-fluid">
+			<div id="menu" class="container">
+				<div id="navbar" class="nav main-nav">
+					<ul class="dropdown">
+						<li class="">
+							<a href="#">Viên Nang Giảm Cân FIT</a>									
+						</li>
+						<li class="">
+							<a href="#">Kiến Thức Giảm Cân</a>	
+						</li>
+						<li class="">
+							<a href="#">Hỏi Đáp FIT</a>						
+						</li>
+						<li class="">
+							<a href="#">Hotline: 0944 223 224</a>						
+						</li>					
+					</ul>
+				</div>
 			</div>
 		</div>		
 	</header>
 	<section class="main">
-		<div class="container main">
+		<div class="container">
 			<div class="row">		
 				<div class="col-md-8 left">
 					<div class="cont">
