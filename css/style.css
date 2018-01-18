@@ -7,29 +7,43 @@
 body{
 	background-color: #691b1d;
 }
-.navbar{
-	
+#container{
+	width: 100%;
+	margin: auto;
+}
+.navbar{	
 	height: 100px;
 	border-radius: 0px;
-	margin-bottom: 0px
-}
+	margin-bottom: 20px;
 
+}
+.wrap-menu{
+	position: relative;
+}
+.imgleft{
+	padding-top: 30px;
+	width: 80%;
+	vertical-align:middle;
+}
 .imgright{
-	padding-top: 20px
+	padding-top: 20px;
+	position: absolute;
+	right: 0px;
+	vertical-align: middle;
 }
 .navbar-nav{
 	padding-top: 20px;
 }
 .navbar-nav>li>a{
 	font-size: 1.3em;
-	color: white
+	color: #fff;
 }
 .navbar-nav>li>a:hover{
 	color: yellow;
 	background-color: #691b1d
 }
-.banner{
-	text-align: center;
+#banner img{
+	width: 100%;
 }
 
 h3{
@@ -51,7 +65,8 @@ h3{
 	background-color: #ffffff;
 	padding: 10px 15px;
 	margin: 0px;
-	border-bottom: 1px solid #691b1d
+	border-bottom: 1px solid #691b1d;
+	font-size: 1.1em;
 }
 .col-md-7{
 	padding-left: 0px;
@@ -63,8 +78,8 @@ h3{
 .col-md-5>.container{
 	padding-left: 0px;
 }
-#slidePro{
-	width: 38%
+#slidePro img{
+	
 }
 .carousel-indicators{
 	display: none;
@@ -182,10 +197,8 @@ h3{
 	padding-left: 20px;
 }
 .col-md-4>p{
-	color: #ffffff;
-	
-	font-size: 13px;
-	
+	color: #ffffff;	
+	font-size: 13px;	
 	padding-top: : 20px;
 	padding-left: 20px;
 }
@@ -197,14 +210,14 @@ h3{
 .avatar>img{
 	width: 80%;
 }
-.col-md-3{
+.col-md-9{
 	color: #ffffff;
 }
-.col-md-3>h5{
+.col-md-9>h5{
 	margin-top: 0px;
 	margin-bottom: 0px
 }
-.col-md-3>p{
+.col-md-9>p{
 	padding-top: 0px;
 	margin-bottom: 0px;
 	padding-right: 3px
@@ -239,14 +252,63 @@ h3{
 }
 .copyright{
 	background-color: #5c1315;
-	padding-top: 10px
 }
 .copyright>p{
 	color: #ffffff;
 	text-align: center;
-	font-size: 1.2em
+	font-size: 1.2em;
+	line-height: 34px;
+	vertical-align: middle;
 }
 .btn-default{
 	background-color: #691b1d !important;
 }
 
+header .wrap-menu .icon-bar{	
+	position: absolute;
+	background-color: red;
+}
+.navbar-header button{
+	background-color: yellow;
+	width: 40px;
+	height: 40px;
+
+}
+@media only screen and (min-width: 1300px){
+	#container{
+		width: 1300px;
+	}
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+
+.imgleft{
+
+	width: 60%
+}
+.imgright{
+	width: 30%
+}
+.navbar-nav{
+	margin-left: -120px
+}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.imgleft{
+
+	width: 40%
+}
+.imgright{
+
+	width: 5%
+}
+.navbar-nav{
+	margin-left: -150px
+}
+}
+
+@media only screen and (min-width: 100px) and (max-width: 479px) {
+
+}
