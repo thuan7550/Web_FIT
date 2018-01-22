@@ -7,6 +7,10 @@
 body {
 	background-color: #691b1d;
 }
+p{
+	padding: 0;
+	margin: 0;
+}
 #container {
 	width: 100%;
 	margin: auto;
@@ -128,8 +132,19 @@ h3 {
 	text-align: center;
 	padding-bottom: 30px
 }
+.feel .carousel-content{
+	padding-left: 80px;
+	padding-right: 80px;
+}
+.feel .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    transform: translateY(-50%);
+}
 #text-carousel {
-	padding-bottom: 30px
+	padding-bottom: 30px;
 }
 .feel>h3 {
 	font-size: 30px;
@@ -146,8 +161,91 @@ h3 {
   margin: auto;  
 }
 
-
-
+.wrap-comment{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #ebebeb;
+}
+.owl-carousel .owl-wrapper-outer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.owl-carousel {
+    display: none;
+    position: relative;
+    width: 100%;
+    opacity: 1;
+    display: block;
+}
+.owl-wrapper{
+	width: 5000px;
+	left: 0px;
+	display: block;
+}
+.owl-item{
+	width: 450px;
+}
+.wrap-comment .item-comment{
+	padding:0px 40px;
+}
+.wrap-comment .item-comment .box {
+    position: relative;
+    padding: 60px 25px;
+    margin-left: 25px;
+    min-height: 320px;
+    background: #fff;
+    border-radius: 25px;
+    color: #959595;
+}
+.wrap-comment .item-comment .box .question {
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #691b1d;
+}
+.wrap-comment .item-comment .box .answer {
+    font-size: 1.1em
+}
+.wrap-comment .arrow {
+    position: absolute;
+    bottom: -15px;
+    right: 70px;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 10%;
+}
+.wrap-comment .member {
+    padding-top: 15px;
+    margin-right: 85px;
+}
+.wrap-comment .member img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    float: right;
+    margin-top: 22px;
+}
+.wrap-comment .member .info {
+    padding-right: 100px;
+    text-align: right;
+    margin-top: 22px;
+}
+.info > p {
+    width: 80%;
+    margin: auto;
+    padding-top: 15px;
+    font-size: 1.1em;
+}
+.wrap-comment .member .name {
+    color: #691b1d;
+    font-weight: bold;
+}
+.wrap-comment .member .email {
+    font-size: 14px;
+    font-style: italic;
+}
 
 .social {
 	padding-left: 20px
@@ -172,6 +270,9 @@ h3 {
 	font-size: 13px;	
 	padding-top: : 20px;
 	padding-left: 20px;
+}
+.col-md-4 h3 i {
+	float: right;
 }
 
 .avatar {
@@ -251,8 +352,14 @@ header .wrap-menu button span.icon-bar {
 }
 
 @media only screen and (min-width: 1300px) {
-	#container {
-		width: 1300px;
+	#container .container-full {
+	    width: 1300px;
+	}
+	#container .container-full {
+	    max-width: 1300px;
+	    height: auto;
+	    padding: 0px 15px;
+	    margin: auto;
 	}
 }
 

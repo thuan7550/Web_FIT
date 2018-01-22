@@ -15,6 +15,15 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script>
+		$(document).ready(function(){
+   			$(".owl-carousel").owlCarousel({
+   				loop:true,
+    			margin:10,
+    			nav:true,
+   			});
+		});
+	</script>
 </head>
 <body>
 	<div id="container">
@@ -147,14 +156,12 @@
 			<section class="container feel">
 				<h3>CẢM NHẬN NGƯỜI SỬ DỤNG</h3>
 			   <div id="text-carousel" class="carousel slide" >
-					<div class="row">
-						<div class="col-xs-offset-3 col-xs-6">
+					<div class="row">						
 							<div class="carousel-inner">
 								<div class="item active">
-									<div class="carousel-content">
-										<div>
-											<p>Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?</p>
-										</div>
+									<div class="carousel-content">							
+										<p>Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?</p>
+									
 									</div>
 								</div>                            
 								<div class="item">
@@ -166,7 +173,7 @@
 								</div>
 								
 							</div>
-						</div>
+						
 					</div>
 					<a class="left carousel-control" href="#text-carousel" data-slide="prev">
 					<span class="glyphicon glyphicon-chevron-left"></span>
@@ -177,33 +184,77 @@
 				</div>
 			</section>
 
-			<section class="comment container">               
-				<div id="slidecomment" class="owl-carousel owl-theme">			   
-					<div class="owl-wrapper-outer">
-						<div class="owl-wrapper">
-							<div class="owl-item">
-								<div class="item comment">
-									<div class="box">
-										<div class="question">
-											Q:  Sóng của mạng s-wifi yếu/ màn hình thiết bị xuất hiện thông tin “ chờ trong giây lát” ?
+			<section class="wrap-comment">
+				<div class="container-full">          
+					<div id="slidecomment" class="owl-carousel owl-theme">			   
+						<div class="owl-wrapper-outer">
+							<div class="owl-wrapper">
+								<div class="owl-item">
+									<div class="item-comment">
+										<div class="box">
+											<div class="question">
+												Q:  Sóng của mạng s-wifi yếu/ màn hình thiết bị xuất hiện thông tin “ chờ trong giây lát” ?
+											</div>
+											<div class="answer">
+												A:  Tại mỗi AP của S-wifi có bảng thông báo Điểm phát S-wifi, bạn nên di chuyển vị trí đến điểm này để được truy cập S-wifi tốc độ cao
+											</div>
+											<img class="arrow" src="images/comment-arrow.png" alt="">
 										</div>
-										<div class="answer">
-											A:  Tại mỗi AP của S-wifi có bảng thông báo Điểm phát S-wifi, bạn nên di chuyển vị trí đến điểm này để được truy cập S-wifi tốc độ cao
+										<div class="member">
+											<img src="images/avatar.png" alt="">
+											<div class="info">
+												<p class="name">Phúc Phằng Phặc</p>
+												<p class="email">#phucthemen@gmail.com</p>
+											</div>
 										</div>
-										<img src="images/comment-arrow.png" alt="">
 									</div>
-									<div class="member">
-										<img src="" alt="">
-										<div class="info">
-											<p class="name">Phúc Phằng Phặc</p>
-											<p class="email">#phucthemen@gmail.com</p>
+								</div>
+
+								<div class="owl-item">
+									<div class="item-comment">
+										<div class="box">
+											<div class="question">
+												Q:  Sóng của mạng s-wifi yếu/ màn hình thiết bị xuất hiện thông tin “ chờ trong giây lát” ?
+											</div>
+											<div class="answer">
+												A:  Tại mỗi AP của S-wifi có bảng thông báo Điểm phát S-wifi, bạn nên di chuyển vị trí đến điểm này để được truy cập S-wifi tốc độ cao
+											</div>
+											<img class="arrow" src="images/comment-arrow.png" alt="">
+										</div>
+										<div class="member">
+											<img src="images/avatar.png" alt="">
+											<div class="info">
+												<p class="name">Phúc Phằng Phặc</p>
+												<p class="email">#phucthemen@gmail.com</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="owl-item">
+									<div class="item-comment">
+										<div class="box">
+											<div class="question">
+												Q:  Sóng của mạng s-wifi yếu/ màn hình thiết bị xuất hiện thông tin “ chờ trong giây lát” ?
+											</div>
+											<div class="answer">
+												A:  Tại mỗi AP của S-wifi có bảng thông báo Điểm phát S-wifi, bạn nên di chuyển vị trí đến điểm này để được truy cập S-wifi tốc độ cao
+											</div>
+											<img class="arrow" src="images/comment-arrow.png" alt="">
+										</div>
+										<div class="member">
+											<img src="images/avatar.png" alt="">
+											<div class="info">
+												<p class="name">Phúc Phằng Phặc</p>
+												<p class="email">#phucthemen@gmail.com</p>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>		
+				</div>  		
 			</section>
 
 
@@ -211,7 +262,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
-						<h3>VỀ CÔNG TY</h3>
+						<h3>VỀ CÔNG TY <i class="fa fa-info-circle"></i></h3>
 						<p>
 							Sed aliquet dui auctor blandit ipsum tincidunt Quis rhoncus lorem dolor eu sem. Aenean enim risus, convallis id ultrices eget.
 						</p>
@@ -230,7 +281,7 @@
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<h3>KIẾN THỨC MỚI</h3>
+						<h3>KIẾN THỨC MỚI <i class="fa fa-newspaper-o"></i></h3>
 						<div class=" user">
 							<div class="row">
 								<div class="col-md-3 avatar">
@@ -258,7 +309,7 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<h3>LIÊN HỆ CHÚNG TÔI</h3>
+						<h3>LIÊN HỆ CHÚNG TÔI <i class="fa fa-envelope"></i></h3>
 						<form>
 							<div class="form-group">
 							  <input type="text" class="form-control" placeholder="Name*">
